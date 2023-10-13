@@ -1,0 +1,14 @@
+.containerInner.ui-sortable {
+  width:100%;
+  max-width:1280px;
+  margin:auto;
+
+
+}
+
+div[data-title='header-menu'] h2 {
+  text-align: center !important;
+}
+div[data-title='header-menu'] a {
+  white-space:nowrap;
+}
