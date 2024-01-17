@@ -95,7 +95,7 @@ $("#submit_btn").click(function() {
       return false;
    });
 
-   
+
    if($(".just-sidemenu").length){
       var anchor_point = $(".rotating-words").height();
       var side_toggle = $(".just-sidemenu #sidemenu_toggle");
@@ -108,7 +108,7 @@ $("#submit_btn").click(function() {
       }
    });
    }
-   
+
 
 
    /*----- Menu On click -----*/
@@ -123,7 +123,7 @@ $("#submit_btn").click(function() {
           $(".side-menu").removeClass("side-menu-active"), $("#close_side_menu").fadeOut(200), $(".pushwrap").removeClass("active")
        });
     }
-   
+
 
    /* ------- Smooth scroll ------- */
    $("a.pagescroll").on("click", function (event) {
@@ -136,13 +136,13 @@ $("#submit_btn").click(function() {
    $(".navbar-nav>li>a").on("click", function(){
     $(".navbar-collapse").collapse("hide");
    });
-   
+
    /*$(".dl-menu >.menu-item >a").on("click", function(){
     $(".pushmenu-right").collapse("hide");
    });*/
-   
 
-   
+
+
    /*------ MENU Fixed ------*/
    if ($("nav.navbar").hasClass("static-nav")) {
       $window.scroll(function () {
@@ -155,7 +155,7 @@ $("#submit_btn").click(function() {
          }
       });
    }
-   
+
    /*bottom menu fix*/
    if ($("nav.navbar").hasClass("fixed-bottom")) {
       var navHeight = $(".fixed-bottom").offset().top;
@@ -168,7 +168,7 @@ $("#submit_btn").click(function() {
       });
    }
 
-    
+
 
    /* ----- Full Screen ----- */
    function resizebanner() {
@@ -180,8 +180,8 @@ $("#submit_btn").click(function() {
    $window.resize(function () {
       resizebanner();
    });
-   
-   
+
+
     /*----- Replace Images on Mobile -----*/
    fiximBlocks();
    porfoliofix();
@@ -203,13 +203,13 @@ $("#submit_btn").click(function() {
             $("#portfolio_top .cbp-item:nth-child(2)", this).insertBefore($("#portfolio_top .cbp-item:nth-child(1)", this));
       }
    }
-   
-   
+
+
    /* -------- SKILL BARS -------- */
    //For Skills Bar on Different Pages
    $('.progress').each(function () {
       $(this).appear(function () {
-         $(this).animate({opacity:1,left:"0px"},800);  
+         $(this).animate({opacity:1,left:"0px"},800);
          var b = jQuery(this).find(".progress-bar").attr("data-value");
          $(this).find(".progress-bar").animate({
             width: b + "%"
@@ -234,7 +234,7 @@ $("#submit_btn").click(function() {
          }
       }
    }
-   
+
 
    /* -------BG Video banner -------*/
    $(function () {
@@ -242,7 +242,7 @@ $("#submit_btn").click(function() {
          $('.my-background-video').bgVideo();
       }
    });
-   
+
 
    /* ------ OWL Slider ------ */
    /*Partners / LOgo*/
@@ -275,7 +275,7 @@ $("#submit_btn").click(function() {
       }
    });
 
-   
+
    /*Testimonials 3columns*/
    $("#testimonial-slider").owlCarousel({
       items: 3,
@@ -297,7 +297,7 @@ $("#submit_btn").click(function() {
          },
       }
    });
-   
+
    /*Testimonial one slide fade*/
    $("#testimonial-quote").owlCarousel({
       items: 1,
@@ -307,7 +307,7 @@ $("#submit_btn").click(function() {
       loop: true,
       margin: 30,
       dots: true,
-      dotsContainer: "#owl-thumbs", 
+      dotsContainer: "#owl-thumbs",
       nav: false,
       animateIn: "fadeIn",
       animateOut: "fadeOut",
@@ -323,7 +323,7 @@ $("#submit_btn").click(function() {
          },
       }
    });
-   
+
    $("#testimonial-quote-nav").owlCarousel({
       items: 1,
       autoplay: 2500,
@@ -334,7 +334,7 @@ $("#submit_btn").click(function() {
       animateIn: "fadeIn",
       animateOut: "fadeOut",
       dots: true,
-      dotsContainer: "#owl-thumbs", 
+      dotsContainer: "#owl-thumbs",
       nav: true,
       navText: ["<i class='fa fa-arrow-left'></i>", "<i class='fa fa-arrow-right'></i>"],
       responsive: {
@@ -349,7 +349,7 @@ $("#submit_btn").click(function() {
          },
       }
    });
-   
+
 
    /*Our Team*/
    $("#ourteam-slider").owlCarousel({
@@ -387,8 +387,8 @@ $("#submit_btn").click(function() {
          }
       }
    });
-   
-   
+
+
    /*Services Box Slider*/
    $("#services-slider").owlCarousel({
       autoplay: true,
@@ -411,7 +411,7 @@ $("#submit_btn").click(function() {
          }
       }
    });
-   
+
 
    /* ----------- Counters ---------- */
    $(".value_formatter").data("countToOptions", {
@@ -496,7 +496,7 @@ $("#submit_btn").click(function() {
          cols: 1
           }],
    });
-   
+
    /*Flat three columns*/
    $("#flat-gallery").cubeportfolio({
       layoutMode: 'grid',
@@ -523,8 +523,8 @@ $("#submit_btn").click(function() {
          cols: 1
           }],
    });
-   
-   
+
+
    /*----- Type Writter Effect -----*/
    if ($("#typewriting").length) {
       var app = document.getElementById("typewriting");
@@ -535,8 +535,8 @@ $("#submit_btn").click(function() {
          .typeString('Parallax').pauseFor(2000).deleteAll()
          .typeString('Flexible').start();
    }
-   
-   
+
+
    /*----- FancyBox -----*/
    $('[data-fancybox]').fancybox({
       protect: true,
@@ -546,7 +546,7 @@ $("#submit_btn").click(function() {
 
 
    /* ------ Revolution Slider ------ */
-   /*main slider*/ 
+   /*main slider*/
    $("#banner-main").show().revolution({
       sliderType: "standard",
       sliderLayout: "fullscreen",
@@ -630,9 +630,9 @@ $("#submit_btn").click(function() {
          nextSlideOnWindowFocus: "off",
          disableFocusListener: false,
       }
-   }); 
-   
-   /*arrows thumb Slider*/				
+   });
+
+   /*arrows thumb Slider*/
   $("#rev_arrows").show().revolution({
      sliderType: "standard",
      jsFileLocation: "js/revolution/",
@@ -713,7 +713,7 @@ $("#submit_btn").click(function() {
         disableFocusListener: false,
      }
   });
-   
+
    /*Revolution Carousel 3 cols*/
    $("#rev_carousel").show().revolution({
       sliderType: "carousel",
@@ -788,7 +788,7 @@ $("#submit_btn").click(function() {
          disableFocusListener: false,
       }
    });
-   
+
    /*animated elements hero banner*/
    $("#rev_single").show().revolution({
       sliderType: "hero",
@@ -826,8 +826,8 @@ $("#submit_btn").click(function() {
          disableFocusListener: false
       }
    });
-			
-   
+
+
 
    /* ----- Google Map ----- */
    if ($("#map-container").length) {
@@ -957,14 +957,14 @@ $("#submit_btn").click(function() {
             mapOptions);
          var marker = new google.maps.Marker({
             position: map.getCenter(),
-            //icon: 'images/locating.png', if u want custom 
+            //icon: 'images/locating.png', if u want custom
             map: map
          });
       }
       google.maps.event.addDomListener(window, 'load', initialize);
    }
-   
-   
+
+
    /* Initializing Particles */
    if ($("#particles-js").length) {
       window.onload = function () {
@@ -977,19 +977,19 @@ $("#submit_btn").click(function() {
          });
       };
    }
-   
+
    /*Wow Animations*/
    if ($(".wow").length) {
       var wow = new WOW({
          boxClass: 'wow',
          animateClass: 'animated',
          offset: 0,
-         mobile: false,
+         mobile: true,
          live: true
       });
       new WOW().init();
    }
-   
+
 
 });
 
@@ -998,8 +998,3 @@ jQuery(function () {
    jQuery("#bgndVideo").vimeo_player();
 });
 */
-
-
-
-
-
