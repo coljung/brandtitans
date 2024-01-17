@@ -18,11 +18,27 @@ p{
 
 .center-block strong{ display: contents;}
 
+.navbar, .center-brand.fixedmenu {
+  background: #222;
+}
 .navbar-brand{ width: auto;}
+.center-brand .navbar-brand{
+  color:#fff;
+  text-transform: uppercase;
+  text-align: left;
+  position: relative;
+}
 
 .hero-robert{
   /* background: url('../images/robert/hero_01.jpg'); */
   min-height: 600px;
+  padding-top: 80px;
+}
+@media (max-width: 992px){
+  .hero-robert{
+    padding-top: 50px;
+    min-height: auto;
+  }
 }
 
 .hero-banner{ max-width: 100%;}
@@ -32,6 +48,14 @@ p{
 }
 .underhero img{
   max-width: 400px;
+}
+@media (max-width: 992px){
+  .underhero{
+    padding: 15px;
+  }
+  .underhero img{
+    max-width: 200px;
+  }
 }
 
 .book_wrapper{
@@ -50,12 +74,27 @@ p{
   font-weight: 400;
   font-size: 2.5rem;
   text-transform: inherit;
+  margin-bottom: 30px;
 }
 .book-top p{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 992px){
+  .book_wrapper{ padding: 30px 0;}
+  .img-book{ padding: 0 20% 10px;}
+  .book-top h1{
+    font-size: 2.5rem;
+  }
+  .book-top h2{
+    font-size: 1.8rem;
+  }
+  .book-top p{
+    font-size: 1.2rem;
+  }
 }
 .rev-box{
-  background: #18193C;
+  background: #242671;
   color: #fff;
 }
 #our-feature{
