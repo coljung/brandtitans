@@ -28,6 +28,10 @@ p{
   text-align: left;
   position: relative;
 }
+.center-brand.fixedmenu .navbar-nav .nav-link {
+    color: #fff;
+    background: none !important;
+}
 
 .hero-robert{
   /* background: url('../images/robert/hero_01.jpg'); */
@@ -97,7 +101,28 @@ p{
   background: #242671;
   color: #fff;
 }
+.rev-div{
+  width: 250px;
+  margin: -15px 0 45px;
+}
 #our-feature{
   background: url('../images/robert/bg-book3.jpg');
   background-attachment: fixed;
+}
+
+.footer-contact {
+  background: #222;
+  color: #fff;
+}
+.footer-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer-list > *{
+}
+
+.footer-contact hr{
+  opacity: .5;
+  margin: 20px 5% 40px;
 }

@@ -964,7 +964,6 @@ $("#submit_btn").click(function() {
       google.maps.event.addDomListener(window, 'load', initialize);
    }
 
-
    /* Initializing Particles */
    if ($("#particles-js").length) {
       window.onload = function () {
