@@ -82,6 +82,7 @@ p{
   font-weight: 700;
   font-size: 3.5rem;
   margin-bottom: 1rem;
+  align-self: flex-start;
 }
 .book-top h2{
   font-weight: 400;
@@ -107,8 +108,13 @@ p{
   }
 }
 .rev-box{
-  background: #242671;
+  background: #18193C;
   color: #fff;
+}
+.rev-box hr{
+  margin: 0 auto 50px;
+    opacity: 1;
+    max-width: 50%;
 }
 .rev-div{
   width: 250px;
