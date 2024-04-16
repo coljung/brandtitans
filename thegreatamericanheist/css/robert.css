@@ -1,0 +1,187 @@
+body{
+  color: #333;
+  font-family: 'Lato', sans-serif;
+}
+.heading-title h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+p{
+  font-size: 16px;
+  line-height: 2;
+}
+
+@media (max-width: 992px){
+  p{
+    font-size: 12px;
+  }
+  .padding {
+    padding: 7.5rem 5%;
+  }
+}
+
+.disp-flex{
+  display:flex;
+}
+
+.center-block strong{ display: contents;}
+
+.navbar, .center-brand.fixedmenu {
+  background: #222;
+}
+.navbar-brand{ width: auto;}
+.center-brand .navbar-brand{
+  color:#fff;
+  text-transform: uppercase;
+  text-align: left;
+  position: relative;
+}
+.center-brand.fixedmenu .navbar-nav .nav-link {
+    color: #fff;
+    background: none !important;
+}
+
+.hero-robert{
+  /* background: url('../images/robert/hero_01.jpg'); */
+  min-height: 600px;
+  padding-top: 80px;
+}
+@media (max-width: 992px){
+  .hero-robert{
+    padding-top: 50px;
+    min-height: auto;
+  }
+}
+
+.hero-banner{ max-width: 100%;}
+.underhero{
+  background: #000;
+  padding: 30px;
+}
+.underhero img{
+  max-width: 400px;
+}
+@media (max-width: 992px){
+  .underhero{
+    padding: 15px;
+  }
+  .underhero img{
+    max-width: 200px;
+  }
+}
+
+.book_wrapper{
+  border-bottom: 1px solid #bbb;
+}
+.book-top{
+  padding: 30px;
+}
+
+.book-top h1{
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+.book-top h2{
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: inherit;
+  margin-bottom: 30px;
+}
+.book-top p{
+  font-size: 1.2rem;
+}
+.buy-link{
+  display: block;
+  background: #ccc;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+.buy-link:hover{
+  background: #ddd;
+  transition: background-color 200ms linear;
+}
+.buy-link img{
+  max-width: 200px;
+}
+
+@media (max-width: 992px){
+  .book_wrapper{ padding: 30px 0;}
+  .img-book{ padding: 0 20% 10px;}
+  .book-top h1{
+    font-size: 2.5rem;
+  }
+  .book-top h2{
+    font-size: 1.8rem;
+  }
+  .book-top p{
+    font-size: 1.2rem;
+  }
+  .buy-link img{
+    max-width: 120px;
+  }
+}
+.rev-box{
+  background: #18193C;
+  color: #fff;
+}
+.rev-box hr{
+  margin: 0 auto 50px;
+    opacity: 1;
+    max-width: 50%;
+}
+.rev-div{
+  width: 250px;
+  margin: -15px 0 45px;
+}
+#our-feature{
+  background: url('../images/bg-book3.jpg');
+  background-attachment: fixed;
+}
+@media (max-width: 992px){
+  #our-feature{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #our-feature img{
+    width: 60%;
+    margin: 0 auto;
+  }
+  #our-feature p{
+    font-size: 12px;
+  }
+  .rev-flex{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.footer-contact {
+  background: #222;
+  color: #fff;
+}
+.footer-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width: 992px){
+  .footer-list{
+    flex-direction: column;
+  }
+}
+.footer-list > *{
+}
+
+.footer-contact hr{
+  opacity: .5;
+  margin: 20px 5% 40px;
+}
+
+.mobile .top50-mob{
+  margin-top:40px
+}
